@@ -5,8 +5,3 @@ services:
     buildCommand: pip install -r requirements.txt
     startCommand: python main.py
     autoDeploy: true
-
-cron:
-  - name: weekly-enroll
-    schedule: "0 20 * * 0"   # Sunday at 8 PM
-    command: "python main.py"
